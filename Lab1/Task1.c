@@ -27,3 +27,23 @@ int main() {
 
     return 0;
 }
+
+========================================================================================
+// #include <stdio.h>
+// #include <unistd.h>
+
+// int main() {
+//     printf("Parent Process: PID = %d\n", getpid());
+
+//     for (int i = 1; i <= 3; i++) {
+//         int pid = fork();
+
+//         if (pid == 0) {  
+//             // Child process
+//             printf("Child %d: PID = %d, PPID = %d\n", i, getpid(), getppid());
+//             return 0; // Child exits so it doesn't continue loop
+//         }
+//     }
+
+//     return 0; // Parent ends
+// }
